@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="metro.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Metro ePass</title>
+</head>
+<body>
+<div id="main">
+  <div id="form">
+      <h1 style="margin:0;padding:0;">😉</h1>
+      <h2>Get an ePass now!!</h2>
+        <input type="text" id="name" placeholder="Your Name" /><br>
+        <!-- <input type="text" name ="boarding" placeholder="boarding" id="boarding"><br> -->
+        <select name="boarding" id="boarding">
+            <option disabled selected>Boarding</option>
+        </select>
+        <select name="destination" id="destination">
+            <option disabled selected>Destination</option>
+        </select>
+        <!-- <input type="text" name ="destination" placeholder="destination" d="destination"><br> -->
+        <!-- <input type="text" name="time" placeholder="time" id="time"> -->
+        <select name="time" id="time">
+            <option disabled selected>Time</option>
+        </select>
+
+        <button id="btn-getPass">Get my Pass</button>
+
+        <p style="color: gray;">Use Wisely 🤫</p>
+    </div>
+
+        <div class="epass-container" id="epass-container">
+            <div id="epass" class="epass-background">
+                <div class="topbar">
+                    <div class="logo-patadisha"><img id="patadisha-logo" src="https://pathadisha.com/metro/assets/img/PathadishaLogo_small.png" alt=""></div>
+                    <div class="metro-title"><span class="pata-title">Patadisha Metro</span><span class="metro-title">ePass</span></div>
+                    <div class="kolkata-metro-logo"><img id="metro-logo" src="https://pathadisha.com/metro/assets/img/Kolkata_Metro_Logo.png" alt=""></div>
+                </div>
+                <div class="main-content">
+                    <div>
+                        <div class="date"><span id="e-date">02-DEC-2020</span></div>
+                        <div class="time"><span id="e-time"></span></div>
+                    </div>
+                    <div class="qr-code"><img src="qrtransparent.png" alt="qrcode"></div>
+                   <div>
+                        <div class="origin">Origin : <span id="e-boarding">KAVI NAZRUL</span></div>
+                        <div class="destination">Destination : <span id="e-destination">DUM DUM</span></div>
+                   </div>
+                    <div>
+                        <div class="name"><span id="e-name">Mithu Mondal</span></div>
+                        <div class="booking-time">Booking Date/Time : <span id="e-bookingDate">02/12/20 6:00 PM</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="closebtn" onclick="closeshow()">&times;</div>
+        <br><br><br>
+    <script src="metro.js"></script>    
+
+</body>
+</html>

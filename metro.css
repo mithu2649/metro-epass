@@ -1,0 +1,221 @@
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(92, 92, 92);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding:20px;
+    max-width: 100%;
+    background-color: black;
+    box-sizing: border-box;
+}
+.epass-container {
+    text-align: center;
+    display: none;
+    margin-top:60px;
+    margin-left:10px;
+}
+#epass{
+    /* background-color: rgb(123, 156, 156); */
+    width: 300px;
+    display: flex;
+   
+    padding:20px;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.topbar{
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.topbar .pata-title{
+    font-size: 18px;
+    margin:0;
+    padding:0;
+    line-height: 1;
+    display: block;
+    font-weight: bold;
+}
+
+.topbar .metro-title{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#patadisha-logo, #metro-logo{
+    width:50px;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height:450px;
+}
+
+.qr-code img{
+    width: 100%;
+}
+
+.qr-code{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background:white; */
+    width: 190px;
+    /* padding: 25px; */
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.date{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.time{
+    font-size: 28px;
+}
+
+.name, .booking-time{
+    font-size: 12px;
+}
+
+
+.a8to9{
+    background-color: rgb(253 211 1) !important;
+}
+.a9to10{
+    background-color:rgb(214 105 228);
+}
+
+.a10to11{
+    background-color:rgb(2 210 229);
+}
+
+.a11to12{
+    background-color: rgb(85 187 4);
+}   
+
+.p12to1{
+    background-color:rgb(76 23 54);
+    color: #fff !important;
+}
+
+.p1to2{
+    background-color: rgb(199 184 7);
+}
+
+.p2to3{
+    background-color: rgb(36 99 235);
+    color: #fff !important;
+}
+
+.p3to4{
+    background-color: rgb(255 168 1);
+
+}
+
+.p4to5{
+    background-color:rgb(132 132 234);
+    color: #fff !important;
+
+}
+.p5to6{
+    background-color:rgb(45 45 57);
+    color: #fff !important;
+
+}
+
+.p6to7{
+    background-color: rgb(35 160 255);
+    color: #fff !important;
+
+}   
+
+.p7to8{
+    background-color: rgb(35 160 255);
+}
+
+.p8to9{
+    background-color:rgb(110, 194, 153);
+}
+
+.p9to10{
+    background-color: rgb(254 101 101);
+}
+
+
+input, select, button{
+    height: 50px;
+    width: 100%;
+    padding: 5px;
+
+    margin-top:10px;
+
+    background-color: gray;
+    border: none;
+
+
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: black;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: black;
+  }
+
+
+input[type="text"]{
+      padding: 0px;
+      padding-left:10px;
+      width:96%;
+}
+button{
+    margin-top:30px;
+    text-align:center;
+    height: 55px;
+    line-height: 30px;
+    background-color: rgb(0, 128, 90);
+    border-radius: 10px;
+    font-size: 20px;
+    margin-bottom:10px;
+    font-weight: bold;
+}
+
+#form h2{
+    color: #fff;
+}
+
+#closebtn{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    border-radius: 50%;
+    font-size: 24px;
+    background-color: rgba(128, 128, 128, 0.589);
+    text-align:center;
+    line-height: 30px;
+}
